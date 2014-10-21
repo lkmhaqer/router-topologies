@@ -1,0 +1,270 @@
+autostart = False
+version = 0.8.7
+[127.0.0.1:7202]
+    workingdir = /tmp
+    udp = 10201
+    [[7200]]
+        image = /Users/cvniman/GNS3/Images/c7200-spservicesk9-mz.124-24.T8.image
+        ram = 512
+        idlepc = 0x606e0538
+        sparsemem = True
+        ghostios = True
+        jitsharing = True
+    [[ROUTER R5]]
+        console = 2105
+        aux = 2505
+        cnfg = configs/R5.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R6 s3/0
+        s3/1 = R7 s3/1
+        s3/3 = R1 s3/3
+        x = -188.0
+        y = -97.0
+        z = 1.0
+    [[ROUTER R6]]
+        console = 2106
+        aux = 2506
+        cnfg = configs/R6.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R5 s3/0
+        s3/1 = R11 s3/1
+        s3/3 = R1 s3/2
+        x = -185.0
+        y = 25.0
+        z = 1.0
+[127.0.0.1:7203]
+    workingdir = /tmp
+    udp = 10301
+    [[7200]]
+        image = /Users/cvniman/GNS3/Images/c7200-spservicesk9-mz.124-24.T8.image
+        ram = 512
+        idlepc = 0x606e0538
+        sparsemem = True
+        ghostios = True
+        jitsharing = True
+    [[ROUTER R7]]
+        console = 2107
+        aux = 2507
+        cnfg = configs/R7.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R8 s3/0
+        s3/1 = R5 s3/1
+        s3/3 = R4 s3/3
+        x = -94.0
+        y = -162.0
+        z = 1.0
+    [[ROUTER R8]]
+        console = 2108
+        aux = 2508
+        cnfg = configs/R8.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R7 s3/0
+        s3/1 = R9 s3/1
+        s3/3 = R4 s3/2
+        x = 22.0
+        y = -164.0
+        z = 1.0
+[127.0.0.1:7200]
+    workingdir = /tmp
+    udp = 10001
+    [[7200]]
+        image = /Users/cvniman/GNS3/Images/c7200-spservicesk9-mz.124-24.T8.image
+        ram = 512
+        idlepc = 0x606e0538
+        sparsemem = True
+        ghostios = True
+        jitsharing = True
+    [[ROUTER R1]]
+        console = 2101
+        aux = 2501
+        cnfg = configs/R1.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/2 = R6 s3/3
+        s3/3 = R5 s3/3
+        x = -352.0
+        y = -35.0
+        z = 1.0
+    [[ROUTER R2]]
+        console = 2102
+        aux = 2502
+        cnfg = configs/R2.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/2 = R10 s3/2
+        s3/3 = R9 s3/3
+        x = 308.0
+        y = -38.0
+        z = 1.0
+[127.0.0.1:7201]
+    workingdir = /tmp
+    udp = 10101
+    [[7200]]
+        image = /Users/cvniman/GNS3/Images/c7200-spservicesk9-mz.124-24.T8.image
+        ram = 512
+        idlepc = 0x606e0538
+        sparsemem = True
+        ghostios = True
+        jitsharing = True
+    [[ROUTER R4]]
+        console = 2104
+        aux = 2504
+        cnfg = configs/R4.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/2 = R8 s3/3
+        s3/3 = R7 s3/3
+        x = -44.0
+        y = -270.0
+        z = 1.0
+    [[ROUTER R3]]
+        console = 2103
+        aux = 2503
+        cnfg = configs/R3.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R13 s3/0
+        s3/1 = R14 s3/3
+        s3/2 = R11 s3/2
+        s3/3 = R12 s3/3
+        x = -70.0
+        y = 223.0
+        z = 1.0
+[127.0.0.1:7206]
+    workingdir = /tmp
+    udp = 10601
+    [[7200]]
+        image = /Users/cvniman/GNS3/Images/c7200-spservicesk9-mz.124-24.T8.image
+        ram = 512
+        idlepc = 0x606e0538
+        sparsemem = True
+        ghostios = True
+        jitsharing = True
+    [[ROUTER R14]]
+        console = 2114
+        aux = 2514
+        cnfg = configs/R14.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/2 = R13 s3/1
+        s3/3 = R3 s3/1
+        x = -9.0
+        y = 342.0
+        z = 1.0
+    [[ROUTER R13]]
+        console = 2113
+        aux = 2513
+        cnfg = configs/R13.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R3 s3/0
+        s3/1 = R14 s3/2
+        s3/2 = R12 s3/2
+        s3/3 = R11 s3/3
+        x = 44.0
+        y = 221.0
+        z = 1.0
+[127.0.0.1:7204]
+    workingdir = /tmp
+    udp = 10401
+    [[7200]]
+        image = /Users/cvniman/GNS3/Images/c7200-spservicesk9-mz.124-24.T8.image
+        ram = 512
+        idlepc = 0x606e0538
+        sparsemem = True
+        ghostios = True
+        jitsharing = True
+    [[ROUTER R9]]
+        console = 2109
+        aux = 2509
+        cnfg = configs/R9.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R10 s3/0
+        s3/1 = R8 s3/1
+        s3/3 = R2 s3/3
+        x = 140.0
+        y = -90.0
+        z = 1.0
+    [[ROUTER R10]]
+        console = 2110
+        aux = 2510
+        cnfg = configs/R10.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R9 s3/0
+        s3/1 = R12 s3/1
+        s3/2 = R2 s3/2
+        x = 139.0
+        y = 14.0
+        z = 1.0
+[127.0.0.1:7205]
+    workingdir = /tmp
+    udp = 10501
+    [[7200]]
+        image = /Users/cvniman/GNS3/Images/c7200-spservicesk9-mz.124-24.T8.image
+        ram = 512
+        idlepc = 0x606e0538
+        sparsemem = True
+        ghostios = True
+        jitsharing = True
+    [[ROUTER R12]]
+        console = 2112
+        aux = 2512
+        cnfg = configs/R12.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R11 s3/0
+        s3/1 = R10 s3/1
+        s3/2 = R13 s3/2
+        s3/3 = R3 s3/3
+        x = 36.0
+        y = 68.0
+        z = 1.0
+    [[ROUTER R11]]
+        console = 2111
+        aux = 2511
+        cnfg = configs/R11.cfg
+        slot0 = C7200-IO-FE
+        slot1 = PA-FE-TX
+        slot2 = PA-FE-TX
+        slot3 = PA-4T+
+        s3/0 = R12 s3/0
+        s3/1 = R6 s3/1
+        s3/2 = R3 s3/2
+        s3/3 = R13 s3/3
+        x = -76.0
+        y = 66.0
+        z = 1.0
+[GNS3-DATA]
+    configs = configs
