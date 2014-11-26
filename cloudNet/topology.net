@@ -60,7 +60,7 @@ version = 0.8.7
         s3/1 = R5 s3/1
         s3/3 = R4 s3/3
         x = -94.0
-        y = -162.0
+        y = -161.0
         z = 1.0
     [[ROUTER R8]]
         console = 2108
@@ -268,3 +268,7 @@ version = 0.8.7
         z = 1.0
 [GNS3-DATA]
     configs = configs
+    [[Cloud C1]]
+        x = -454.5
+        y = -267.0
+        z = 1.0
