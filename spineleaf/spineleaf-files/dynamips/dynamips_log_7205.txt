@@ -1,0 +1,42 @@
+Dec 17 07:07:14.560 HYPERVISOR: Release 0.2.12-amd64/Darwin (tag 2014032722)
+Dec 17 07:07:14.560 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 7205.
+Dec 17 07:07:14.568 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 17 07:07:14.568 HYPERVISOR: exec_cmd: hypervisor uuid 
+Dec 17 07:07:14.568 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cvniman/GNS3/projects/spineleaf/spineleaf-files/dynamips 
+Dec 17 07:07:14.568 GENERAL: working_dir=/Users/cvniman/GNS3/projects/spineleaf/spineleaf-files/dynamips
+Dec 17 07:07:14.568 HYPERVISOR: exec_cmd: vm create R6 6 c3725 
+Dec 17 07:07:14.568 VM: VM R6 created.
+Dec 17 07:07:14.569 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 2006 
+Dec 17 07:07:14.569 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R6 2506 
+Dec 17 07:07:14.569 HYPERVISOR: exec_cmd: c3725 get_mac_addr R6 
+Dec 17 07:07:14.570 HYPERVISOR: exec_cmd: vm set_ios R6 /Users/cvniman/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Dec 17 07:07:14.570 HYPERVISOR: exec_cmd: vm set_sparse_mem R6 1 
+Dec 17 07:07:14.570 HYPERVISOR: exec_cmd: vm set_ram_mmap R6 1 
+Dec 17 07:07:14.571 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+Dec 17 07:07:14.571 HYPERVISOR: exec_cmd: vm set_ghost_file R6 c3725-adventerprisek9-mz.124-25d.image-128.ghost 
+Dec 17 07:07:14.586 HYPERVISOR: exec_cmd: vm set_config R6 configs/ios_base_startup-config.txt 
+Dec 17 07:07:14.587 HYPERVISOR: exec_cmd: vm set_config R6 configs/ios_base_startup-config.txt configs/ios_base_private-config.txt 
+Dec 17 07:07:14.587 HYPERVISOR: exec_cmd: vm set_disk0 R6 1 
+Dec 17 07:07:14.588 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 16 WIC-2T 
+Dec 17 07:07:14.588 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 17 07:07:14.588 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 NM-1FE-TX 
+Dec 17 07:07:14.588 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 17 07:07:14.589 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 17 07:07:14.589 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 NM-16ESW 
+Dec 17 07:07:14.589 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 17 07:07:14.589 HYPERVISOR: exec_cmd: vm set_nvram R6 256 
+Dec 17 07:07:14.589 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 17 07:07:14.590 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x60a7e9f8 
+Dec 17 07:07:56.180 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 32 WIC-2T 
+Dec 17 07:08:33.799 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto6 127.0.0.1 10001 20000 
+Dec 17 07:08:33.821 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto6 127.0.0.1 10008 
+Dec 17 07:08:33.822 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 16 nio_udp_auto6 
+Dec 17 07:08:33.822 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 17 07:08:57.611 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto14 127.0.0.1 10001 20000 
+Dec 17 07:08:57.624 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto14 127.0.0.1 10016 
+Dec 17 07:08:57.624 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 17 nio_udp_auto14 
+Dec 17 07:08:57.625 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 17 08:41:08.613 HYPERVISOR: exec_cmd: vm get_status R6 
+Dec 17 08:41:08.613 HYPERVISOR: exec_cmd: vm start R6 
+Dec 17 08:41:08.614 GHOST: loaded ghost image c3725-adventerprisek9-mz.124-25d.image-128.ghost (fd=15) at addr=0x10f612000 (size=0x10000000)
+Dec 17 08:41:08.614 GHOST: loaded image c3725-adventerprisek9-mz.124-25d.image-128.ghost successfully.

@@ -1,0 +1,55 @@
+Dec 17 07:06:52.881 HYPERVISOR: Release 0.2.12-amd64/Darwin (tag 2014032722)
+Dec 17 07:06:52.881 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 7201.
+Dec 17 07:06:52.891 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 17 07:06:52.891 HYPERVISOR: exec_cmd: hypervisor uuid 
+Dec 17 07:06:52.891 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cvniman/GNS3/projects/spineleaf/spineleaf-files/dynamips 
+Dec 17 07:06:52.891 GENERAL: working_dir=/Users/cvniman/GNS3/projects/spineleaf/spineleaf-files/dynamips
+Dec 17 07:06:52.891 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Dec 17 07:06:52.891 VM: VM R2 created.
+Dec 17 07:06:52.892 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 2002 
+Dec 17 07:06:52.892 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R2 2502 
+Dec 17 07:06:52.892 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Dec 17 07:06:52.892 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:06:52.893 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Dec 17 07:06:52.893 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:06:52.893 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Dec 17 07:06:52.893 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/cvniman/GNS3/Images/c7200-spservicesk9-mz.124-24.T8.image 
+Dec 17 07:06:52.894 HYPERVISOR: exec_cmd: vm set_sparse_mem R2 1 
+Dec 17 07:06:52.894 HYPERVISOR: exec_cmd: vm set_ram_mmap R2 1 
+Dec 17 07:06:52.894 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Dec 17 07:06:52.895 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c7200-spservicesk9-mz.124-24.T8.image-512.ghost 
+Dec 17 07:06:52.910 HYPERVISOR: exec_cmd: vm set_config R2 configs/ios_base_startup-config.txt 
+Dec 17 07:06:52.910 HYPERVISOR: exec_cmd: vm set_config R2 configs/ios_base_startup-config.txt configs/ios_base_private-config.txt 
+Dec 17 07:06:52.910 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Dec 17 07:06:52.911 HYPERVISOR: exec_cmd: vm set_disk0 R2 1 
+Dec 17 07:07:41.546 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:07:41.546 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-4T+ 
+Dec 17 07:07:41.546 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:08:44.286 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto9 127.0.0.1 10001 20000 
+Dec 17 07:08:44.314 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto9 127.0.0.1 10009 
+Dec 17 07:08:44.314 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 nio_udp_auto9 
+Dec 17 07:08:44.314 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:08:49.230 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto11 127.0.0.1 10001 20000 
+Dec 17 07:08:49.252 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto11 127.0.0.1 10011 
+Dec 17 07:08:49.252 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 nio_udp_auto11 
+Dec 17 07:08:49.252 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:08:53.344 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto13 127.0.0.1 10001 20000 
+Dec 17 07:08:53.427 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto13 127.0.0.1 10013 
+Dec 17 07:08:53.428 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 2 nio_udp_auto13 
+Dec 17 07:08:53.428 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:08:57.613 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto15 127.0.0.1 10001 20000 
+Dec 17 07:08:57.633 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto15 127.0.0.1 10015 
+Dec 17 07:08:57.633 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 3 nio_udp_auto15 
+Dec 17 07:08:57.633 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:31:48.829 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:31:48.829 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x606dfc58 
+Dec 17 07:32:34.118 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 07:32:34.118 HYPERVISOR: exec_cmd: vm start R2 
+Dec 17 07:32:34.120 GHOST: loaded ghost image c7200-spservicesk9-mz.124-24.T8.image-512.ghost (fd=18) at addr=0x108065000 (size=0x10000000)
+Dec 17 07:32:34.120 GHOST: loaded image c7200-spservicesk9-mz.124-24.T8.image-512.ghost successfully.
+Dec 17 08:36:43.031 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 08:36:43.031 HYPERVISOR: exec_cmd: vm set_idle_pc_online R2 0 0x0 
+Dec 17 08:36:43.031 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 08:36:43.032 HYPERVISOR: exec_cmd: vm get_idle_pc_prop R2 0 
+Dec 17 08:37:01.707 HYPERVISOR: exec_cmd: vm get_status R2 
+Dec 17 08:37:01.707 HYPERVISOR: exec_cmd: vm set_idle_pc_online R2 0 0x606e0538 
