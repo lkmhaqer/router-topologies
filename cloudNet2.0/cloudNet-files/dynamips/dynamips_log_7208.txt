@@ -1,0 +1,52 @@
+Mar 25 07:32:38.980 HYPERVISOR: Release 0.2.12-amd64/Darwin (tag 2014032722)
+Mar 25 07:32:38.980 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 7208.
+Mar 25 07:32:38.989 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 25 07:32:38.989 HYPERVISOR: exec_cmd: hypervisor uuid 
+Mar 25 07:32:38.989 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cvniman/GNS3/projects/cloudNet/cloudNet-files/dynamips 
+Mar 25 07:32:38.989 GENERAL: working_dir=/Users/cvniman/GNS3/projects/cloudNet/cloudNet-files/dynamips
+Mar 25 07:32:38.989 HYPERVISOR: exec_cmd: vm create R10 9 c7200 
+Mar 25 07:32:38.989 VM: VM R10 created.
+Mar 25 07:32:38.990 HYPERVISOR: exec_cmd: vm set_con_tcp_port R10 2001 
+Mar 25 07:32:38.990 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R10 2509 
+Mar 25 07:32:38.990 HYPERVISOR: exec_cmd: c7200 get_mac_addr R10 
+Mar 25 07:32:38.990 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:38.991 HYPERVISOR: exec_cmd: vm slot_add_binding R10 0 0 C7200-IO-FE 
+Mar 25 07:32:38.991 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:38.991 HYPERVISOR: exec_cmd: vm set_ios R10 /Users/cvniman/GNS3/images/IOS/c7200-spservicesk9-mz.124-24.T8.image 
+Mar 25 07:32:38.991 HYPERVISOR: exec_cmd: vm set_sparse_mem R10 1 
+Mar 25 07:32:38.992 HYPERVISOR: exec_cmd: vm set_ram_mmap R10 1 
+Mar 25 07:32:38.992 HYPERVISOR: exec_cmd: vm set_con_tcp_port R10 2110 
+Mar 25 07:32:38.992 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R10 2510 
+Mar 25 07:32:38.993 HYPERVISOR: exec_cmd: c7200 set_mac_addr R10 ca09.415e.0000 
+Mar 25 07:32:38.993 HYPERVISOR: exec_cmd: vm set_ghost_status R10 2 
+Mar 25 07:32:38.993 HYPERVISOR: exec_cmd: vm set_ghost_file R10 c7200-spservicesk9-mz.124-24.T8.image-512.ghost 
+Mar 25 07:32:40.221 HYPERVISOR: exec_cmd: vm set_config R10 configs/i9_startup-config.cfg 
+Mar 25 07:32:40.221 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.221 HYPERVISOR: exec_cmd: vm set_idle_pc R10 0x606e0538 
+Mar 25 07:32:40.222 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.222 HYPERVISOR: exec_cmd: vm slot_add_binding R10 3 0 PA-4T+ 
+Mar 25 07:32:40.222 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.222 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.222 HYPERVISOR: exec_cmd: vm slot_add_binding R10 1 0 PA-FE-TX 
+Mar 25 07:32:40.223 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.223 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.223 HYPERVISOR: exec_cmd: vm slot_add_binding R10 2 0 PA-FE-TX 
+Mar 25 07:32:40.223 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.374 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto14 127.0.0.1 10001 20000 
+Mar 25 07:32:40.408 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto16 127.0.0.1 10001 20000 
+Mar 25 07:32:40.474 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto26 127.0.0.1 10001 20000 
+Mar 25 07:32:40.858 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto14 127.0.0.1 10016 
+Mar 25 07:32:40.858 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R10 3 2 nio_udp_auto14 
+Mar 25 07:32:40.858 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.877 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto16 127.0.0.1 10018 
+Mar 25 07:32:40.878 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R10 3 0 nio_udp_auto16 
+Mar 25 07:32:40.878 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:32:40.976 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto26 127.0.0.1 10028 
+Mar 25 07:32:40.977 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R10 3 1 nio_udp_auto26 
+Mar 25 07:32:40.977 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:35:49.457 HYPERVISOR: exec_cmd: vm get_status R10 
+Mar 25 07:35:49.457 HYPERVISOR: exec_cmd: vm start R10 
+Mar 25 07:35:49.458 GHOST: loaded ghost image c7200-spservicesk9-mz.124-24.T8.image-512.ghost (fd=17) at addr=0x110385000 (size=0x10000000)
+Mar 25 07:35:49.458 GHOST: loaded image c7200-spservicesk9-mz.124-24.T8.image-512.ghost successfully.
+Mar 25 07:48:07.991 HYPERVISOR: exec_cmd: vm extract_config R10 
+Mar 25 07:48:08.484 HYPERVISOR: exec_cmd: hypervisor stop 

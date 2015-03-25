@@ -1,0 +1,56 @@
+Mar 25 07:32:38.840 HYPERVISOR: Release 0.2.12-amd64/Darwin (tag 2014032722)
+Mar 25 07:32:38.841 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 7202.
+Mar 25 07:32:38.849 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 25 07:32:38.850 HYPERVISOR: exec_cmd: hypervisor uuid 
+Mar 25 07:32:38.850 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cvniman/GNS3/projects/cloudNet/cloudNet-files/dynamips 
+Mar 25 07:32:38.850 GENERAL: working_dir=/Users/cvniman/GNS3/projects/cloudNet/cloudNet-files/dynamips
+Mar 25 07:32:38.850 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Mar 25 07:32:38.850 VM: VM R3 created.
+Mar 25 07:32:38.851 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 2001 
+Mar 25 07:32:38.851 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R3 2503 
+Mar 25 07:32:38.851 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Mar 25 07:32:38.851 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:38.852 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Mar 25 07:32:38.852 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:38.852 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/cvniman/GNS3/images/IOS/c7200-spservicesk9-mz.124-24.T8.image 
+Mar 25 07:32:38.852 HYPERVISOR: exec_cmd: vm set_sparse_mem R3 1 
+Mar 25 07:32:38.853 HYPERVISOR: exec_cmd: vm set_ram_mmap R3 1 
+Mar 25 07:32:38.853 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 2103 
+Mar 25 07:32:38.853 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca03.4158.0000 
+Mar 25 07:32:38.854 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Mar 25 07:32:38.854 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c7200-spservicesk9-mz.124-24.T8.image-512.ghost 
+Mar 25 07:32:40.131 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Mar 25 07:32:40.132 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:40.132 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x606e0538 
+Mar 25 07:32:40.132 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:40.133 HYPERVISOR: exec_cmd: vm slot_add_binding R3 3 0 PA-4T+ 
+Mar 25 07:32:40.133 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:40.133 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:40.133 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-FE-TX 
+Mar 25 07:32:40.133 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:40.134 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:40.134 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-FE-TX 
+Mar 25 07:32:40.134 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:40.446 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto25 127.0.0.1 10001 20000 
+Mar 25 07:32:40.483 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto31 127.0.0.1 10001 20000 
+Mar 25 07:32:40.518 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto37 127.0.0.1 10001 20000 
+Mar 25 07:32:40.547 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto41 127.0.0.1 10001 20000 
+Mar 25 07:32:40.967 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto25 127.0.0.1 10025 
+Mar 25 07:32:40.967 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 3 2 nio_udp_auto25 
+Mar 25 07:32:40.968 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:41.025 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto31 127.0.0.1 10031 
+Mar 25 07:32:41.026 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 3 3 nio_udp_auto31 
+Mar 25 07:32:41.026 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:41.086 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto37 127.0.0.1 10037 
+Mar 25 07:32:41.087 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 3 0 nio_udp_auto37 
+Mar 25 07:32:41.087 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:32:41.126 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto41 127.0.0.1 10041 
+Mar 25 07:32:41.127 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 3 1 nio_udp_auto41 
+Mar 25 07:32:41.127 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:35:50.836 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 25 07:35:50.836 HYPERVISOR: exec_cmd: vm start R3 
+Mar 25 07:35:50.838 GHOST: loaded ghost image c7200-spservicesk9-mz.124-24.T8.image-512.ghost (fd=18) at addr=0x1131aa000 (size=0x10000000)
+Mar 25 07:35:50.838 GHOST: loaded image c7200-spservicesk9-mz.124-24.T8.image-512.ghost successfully.
+Mar 25 07:48:07.985 HYPERVISOR: exec_cmd: vm extract_config R3 
+Mar 25 07:48:08.151 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 25 07:48:08.155 HYPERVISOR: Stopped.
