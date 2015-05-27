@@ -1,0 +1,54 @@
+May 26 23:04:13.741 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 26 23:04:13.741 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50295.
+May 26 23:04:14.221 HYPERVISOR: exec_cmd: hypervisor version 
+May 26 23:04:14.243 HYPERVISOR: exec_cmd: hypervisor uuid 
+May 26 23:04:14.244 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips 
+May 26 23:04:14.244 GENERAL: working_dir=C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips
+May 26 23:04:14.245 HYPERVISOR: exec_cmd: vm create R10 9 c7200 
+May 26 23:04:14.246 VM: VM R10 created.
+May 26 23:04:14.246 HYPERVISOR: exec_cmd: vm set_con_tcp_port R10 2110 
+May 26 23:04:14.247 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R10 2510 
+May 26 23:04:14.247 HYPERVISOR: exec_cmd: c7200 get_mac_addr R10 
+May 26 23:04:14.247 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:04:14.247 HYPERVISOR: exec_cmd: vm slot_add_binding R10 0 0 C7200-IO-FE 
+May 26 23:04:14.248 HYPERVISOR: exec_cmd: c7200 set_mac_addr R10 ca09.415e.0000 
+May 26 23:04:14.248 HYPERVISOR: exec_cmd: vm set_ram R10 512 
+May 26 23:04:14.249 HYPERVISOR: exec_cmd: vm set_ios R10 C:/Users/Elephant/Downloads/c7200p-spservicesk9-mz.124-24.T5.bin 
+May 26 23:04:14.249 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:04:14.249 HYPERVISOR: exec_cmd: vm slot_add_binding R10 1 0 PA-FE-TX 
+May 26 23:04:14.250 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:04:14.250 HYPERVISOR: exec_cmd: vm slot_add_binding R10 2 0 PA-FE-TX 
+May 26 23:04:14.250 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:04:14.250 HYPERVISOR: exec_cmd: vm slot_add_binding R10 3 0 PA-4T+ 
+May 26 23:04:14.251 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:04:14.251 HYPERVISOR: exec_cmd: vm set_idle_pc R10 0x606e0538 
+May 26 23:04:14.252 HYPERVISOR: exec_cmd: vm set_config R10 configs/i9_startup-config.cfg 
+May 26 23:04:16.325 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+May 26 23:04:16.326 VM: VM Ghost created.
+May 26 23:04:16.348 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Elephant/Downloads/c7200p-spservicesk9-mz.124-24.T5.bin 
+May 26 23:04:16.349 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 26 23:04:16.350 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200p-spservicesk9-mz.124-24.T5.bin-512.ghost 
+May 26 23:04:16.351 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+May 26 23:04:16.353 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 26 23:04:16.354 HYPERVISOR: exec_cmd: vm start Ghost 
+May 26 23:04:16.589 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 26 23:04:16.809 VM: VM Ghost shutdown.
+May 26 23:04:16.809 VM: VM Ghost destroyed.
+May 26 23:04:16.817 HYPERVISOR: exec_cmd: vm set_ghost_status R10 2 
+May 26 23:04:16.817 HYPERVISOR: exec_cmd: vm set_ghost_file R10 c7200p-spservicesk9-mz.124-24.T5.bin-512.ghost 
+May 26 23:04:17.148 HYPERVISOR: exec_cmd: nio create_udp udp-78c97e47-5bce-4d3e-ba10-6c659d2f60df 10010 127.0.0.1 10011 
+May 26 23:04:17.148 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R10 3 2 udp-78c97e47-5bce-4d3e-ba10-6c659d2f60df 
+May 26 23:04:17.149 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:04:17.397 HYPERVISOR: exec_cmd: nio create_udp udp-f07c6cd6-9e05-447d-9fe6-1177ee1503fc 10012 127.0.0.1 10013 
+May 26 23:04:17.408 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R10 3 0 udp-f07c6cd6-9e05-447d-9fe6-1177ee1503fc 
+May 26 23:04:17.409 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:04:18.401 HYPERVISOR: exec_cmd: nio create_udp udp-328edb06-02d9-4820-92a2-a612db406041 10022 127.0.0.1 10023 
+May 26 23:04:18.440 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R10 3 1 udp-328edb06-02d9-4820-92a2-a612db406041 
+May 26 23:04:18.441 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:07:15.593 HYPERVISOR: exec_cmd: vm get_status R10 
+May 26 23:07:15.598 HYPERVISOR: exec_cmd: vm extract_config R10 
+May 26 23:07:15.607 HYPERVISOR: exec_cmd: vm delete R10 
+May 26 23:07:15.607 VM: VM R10 destroyed.
+May 26 23:07:15.614 HYPERVISOR: exec_cmd: hypervisor stop 
+May 26 23:07:15.731 HYPERVISOR: Stopped.
+May 26 23:07:15.731 GENERAL: reset done.

@@ -1,0 +1,53 @@
+May 26 23:04:12.627 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 26 23:04:12.627 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50284.
+May 26 23:04:12.664 HYPERVISOR: exec_cmd: hypervisor version 
+May 26 23:04:12.665 HYPERVISOR: exec_cmd: hypervisor uuid 
+May 26 23:04:12.666 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips 
+May 26 23:04:12.666 GENERAL: working_dir=C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips
+May 26 23:04:12.667 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+May 26 23:04:12.668 VM: VM R4 created.
+May 26 23:04:12.670 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2104 
+May 26 23:04:12.670 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R4 2504 
+May 26 23:04:12.671 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+May 26 23:04:12.672 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:04:12.673 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+May 26 23:04:12.677 HYPERVISOR: exec_cmd: c7200 set_mac_addr R4 ca04.4159.0000 
+May 26 23:04:12.679 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+May 26 23:04:12.681 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Elephant/Downloads/c7200p-spservicesk9-mz.124-24.T5.bin 
+May 26 23:04:12.682 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:04:12.684 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-FE-TX 
+May 26 23:04:12.685 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:04:12.686 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-FE-TX 
+May 26 23:04:12.687 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:04:12.688 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 PA-4T+ 
+May 26 23:04:12.689 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:04:12.691 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x606e0538 
+May 26 23:04:12.693 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+May 26 23:04:13.698 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+May 26 23:04:13.699 VM: VM Ghost created.
+May 26 23:04:13.721 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Elephant/Downloads/c7200p-spservicesk9-mz.124-24.T5.bin 
+May 26 23:04:13.722 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 26 23:04:13.723 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200p-spservicesk9-mz.124-24.T5.bin-512.ghost 
+May 26 23:04:13.724 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+May 26 23:04:13.724 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 26 23:04:13.725 HYPERVISOR: exec_cmd: vm start Ghost 
+May 26 23:04:13.964 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 26 23:04:14.182 VM: VM Ghost shutdown.
+May 26 23:04:14.182 VM: VM Ghost destroyed.
+May 26 23:04:14.189 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+May 26 23:04:14.190 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c7200p-spservicesk9-mz.124-24.T5.bin-512.ghost 
+May 26 23:04:16.854 HYPERVISOR: exec_cmd: nio create_udp udp-b8b9ef13-e1c2-4c49-8ce1-e47e513317cd 65400 129.250.49.82 65200 
+May 26 23:04:16.855 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-b8b9ef13-e1c2-4c49-8ce1-e47e513317cd 
+May 26 23:04:16.856 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:04:16.911 HYPERVISOR: exec_cmd: nio create_udp udp-638935a2-7c16-4501-b504-dd79674b500e 10000 127.0.0.1 10001 
+May 26 23:04:16.912 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 3 3 udp-638935a2-7c16-4501-b504-dd79674b500e 
+May 26 23:04:16.912 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:04:17.052 HYPERVISOR: exec_cmd: nio create_udp udp-2e0b8c3d-5281-4494-8c28-8f97f2820ce8 10006 127.0.0.1 10007 
+May 26 23:04:17.052 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 3 2 udp-2e0b8c3d-5281-4494-8c28-8f97f2820ce8 
+May 26 23:04:17.053 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:07:15.591 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:07:15.596 HYPERVISOR: exec_cmd: vm extract_config R4 
+May 26 23:07:15.601 HYPERVISOR: exec_cmd: hypervisor stop 
+May 26 23:07:15.676 HYPERVISOR: Stopped.
+May 26 23:07:15.676 VM: VM R4 destroyed.
+May 26 23:07:15.677 GENERAL: reset done.

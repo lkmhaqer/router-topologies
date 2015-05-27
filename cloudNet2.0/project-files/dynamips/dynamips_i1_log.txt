@@ -1,0 +1,21 @@
+May 26 23:02:58.538 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 26 23:02:58.539 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50257.
+May 26 23:02:58.629 HYPERVISOR: exec_cmd: hypervisor version 
+May 26 23:02:58.629 HYPERVISOR: exec_cmd: hypervisor uuid 
+May 26 23:02:58.630 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips 
+May 26 23:02:58.639 GENERAL: working_dir=C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips
+May 26 23:02:58.640 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+May 26 23:02:58.641 VM: VM R1 created.
+May 26 23:02:58.642 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 2101 
+May 26 23:02:58.642 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R1 2501 
+May 26 23:02:58.643 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+May 26 23:02:58.643 HYPERVISOR: exec_cmd: vm get_status R1 
+May 26 23:02:58.644 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+May 26 23:02:58.644 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.4156.0000 
+May 26 23:02:58.645 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+May 26 23:07:15.591 HYPERVISOR: exec_cmd: vm get_status R1 
+May 26 23:07:15.597 HYPERVISOR: exec_cmd: vm delete R1 
+May 26 23:07:15.597 VM: VM R1 destroyed.
+May 26 23:07:15.606 HYPERVISOR: exec_cmd: hypervisor stop 
+May 26 23:07:15.649 HYPERVISOR: Stopped.
+May 26 23:07:15.649 GENERAL: reset done.

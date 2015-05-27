@@ -1,0 +1,45 @@
+May 26 23:05:12.391 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 26 23:05:12.391 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50327.
+May 26 23:05:12.886 HYPERVISOR: exec_cmd: hypervisor version 
+May 26 23:05:12.886 HYPERVISOR: exec_cmd: hypervisor uuid 
+May 26 23:05:12.886 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips 
+May 26 23:05:12.887 GENERAL: working_dir=C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips
+May 26 23:05:12.887 HYPERVISOR: exec_cmd: vm create R15 15 c3725 
+May 26 23:05:12.888 VM: VM R15 created.
+May 26 23:05:12.889 HYPERVISOR: exec_cmd: vm set_con_tcp_port R15 2001 
+May 26 23:05:12.889 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R15 2515 
+May 26 23:05:12.889 HYPERVISOR: exec_cmd: c3725 get_mac_addr R15 
+May 26 23:05:12.890 HYPERVISOR: exec_cmd: vm set_disk0 R15 1 
+May 26 23:05:12.890 HYPERVISOR: exec_cmd: vm set_nvram R15 256 
+May 26 23:05:12.891 HYPERVISOR: exec_cmd: vm slot_add_binding R15 0 16 WIC-2T 
+May 26 23:05:12.892 HYPERVISOR: exec_cmd: vm set_ios R15 C:/Users/Elephant/Downloads/c3725-adventerprisek9-mz.124-25d.bin 
+May 26 23:05:12.892 HYPERVISOR: exec_cmd: vm get_status R15 
+May 26 23:05:12.893 HYPERVISOR: exec_cmd: vm slot_add_binding R15 1 0 NM-1FE-TX 
+May 26 23:05:12.893 HYPERVISOR: exec_cmd: vm get_status R15 
+May 26 23:05:12.894 HYPERVISOR: exec_cmd: vm slot_add_binding R15 2 0 NM-16ESW 
+May 26 23:05:12.894 HYPERVISOR: exec_cmd: c3725 set_mac_addr R15 c20f.41ac.0000 
+May 26 23:05:12.895 HYPERVISOR: exec_cmd: vm get_status R15 
+May 26 23:05:12.895 HYPERVISOR: exec_cmd: vm set_idle_pc R15 0x60a7e9f8 
+May 26 23:05:12.896 HYPERVISOR: exec_cmd: vm set_config R15 configs/ios_base_startup-config.txt 
+May 26 23:05:12.897 HYPERVISOR: exec_cmd: vm set_config R15 configs/ios_base_startup-config.txt configs/ios_base_private-config.txt 
+May 26 23:05:12.898 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+May 26 23:05:12.900 VM: VM Ghost created.
+May 26 23:05:12.900 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Elephant/Downloads/c3725-adventerprisek9-mz.124-25d.bin 
+May 26 23:05:12.901 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 26 23:05:12.902 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-adventerprisek9-mz.124-25d.bin-128.ghost 
+May 26 23:05:12.902 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 26 23:05:12.903 HYPERVISOR: exec_cmd: vm start Ghost 
+May 26 23:05:13.173 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 26 23:05:13.173 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 26 23:05:13.330 VM: VM Ghost shutdown.
+May 26 23:05:13.331 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 26 23:05:13.331 VM: VM Ghost destroyed.
+May 26 23:05:13.342 HYPERVISOR: exec_cmd: vm set_ghost_status R15 2 
+May 26 23:05:13.342 HYPERVISOR: exec_cmd: vm set_ghost_file R15 c3725-adventerprisek9-mz.124-25d.bin-128.ghost 
+May 26 23:07:15.595 HYPERVISOR: exec_cmd: vm get_status R15 
+May 26 23:07:15.599 HYPERVISOR: exec_cmd: vm extract_config R15 
+May 26 23:07:15.611 HYPERVISOR: exec_cmd: vm delete R15 
+May 26 23:07:15.611 VM: VM R15 destroyed.
+May 26 23:07:15.616 HYPERVISOR: exec_cmd: hypervisor stop 
+May 26 23:07:15.892 HYPERVISOR: Stopped.
+May 26 23:07:15.892 GENERAL: reset done.

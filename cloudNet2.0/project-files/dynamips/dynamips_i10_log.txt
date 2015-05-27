@@ -1,0 +1,54 @@
+May 26 23:04:14.264 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 26 23:04:14.265 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50297.
+May 26 23:04:14.760 HYPERVISOR: exec_cmd: hypervisor version 
+May 26 23:04:14.761 HYPERVISOR: exec_cmd: hypervisor uuid 
+May 26 23:04:14.761 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips 
+May 26 23:04:14.762 GENERAL: working_dir=C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips
+May 26 23:04:14.762 HYPERVISOR: exec_cmd: vm create R9 10 c7200 
+May 26 23:04:14.763 VM: VM R9 created.
+May 26 23:04:14.764 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 2109 
+May 26 23:04:14.764 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R9 2509 
+May 26 23:04:14.764 HYPERVISOR: exec_cmd: c7200 get_mac_addr R9 
+May 26 23:04:14.764 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:04:14.765 HYPERVISOR: exec_cmd: vm slot_add_binding R9 0 0 C7200-IO-FE 
+May 26 23:04:14.765 HYPERVISOR: exec_cmd: c7200 set_mac_addr R9 ca0a.415f.0000 
+May 26 23:04:14.766 HYPERVISOR: exec_cmd: vm set_ram R9 512 
+May 26 23:04:14.766 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/Elephant/Downloads/c7200p-spservicesk9-mz.124-24.T5.bin 
+May 26 23:04:14.766 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:04:14.767 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 PA-FE-TX 
+May 26 23:04:14.767 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:04:14.767 HYPERVISOR: exec_cmd: vm slot_add_binding R9 2 0 PA-FE-TX 
+May 26 23:04:14.768 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:04:14.768 HYPERVISOR: exec_cmd: vm slot_add_binding R9 3 0 PA-4T+ 
+May 26 23:04:14.769 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:04:14.769 HYPERVISOR: exec_cmd: vm set_idle_pc R9 0x606e0538 
+May 26 23:04:14.769 HYPERVISOR: exec_cmd: vm set_config R9 configs/i10_startup-config.cfg 
+May 26 23:04:16.842 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+May 26 23:04:16.843 VM: VM Ghost created.
+May 26 23:04:16.854 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Elephant/Downloads/c7200p-spservicesk9-mz.124-24.T5.bin 
+May 26 23:04:16.855 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 26 23:04:16.856 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200p-spservicesk9-mz.124-24.T5.bin-512.ghost 
+May 26 23:04:16.868 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+May 26 23:04:16.871 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 26 23:04:16.871 HYPERVISOR: exec_cmd: vm start Ghost 
+May 26 23:04:17.114 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 26 23:04:17.334 VM: VM Ghost shutdown.
+May 26 23:04:17.334 VM: VM Ghost destroyed.
+May 26 23:04:17.340 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+May 26 23:04:17.341 HYPERVISOR: exec_cmd: vm set_ghost_file R9 c7200p-spservicesk9-mz.124-24.T5.bin-512.ghost 
+May 26 23:04:17.407 HYPERVISOR: exec_cmd: nio create_udp udp-3bd7c521-0c8f-4f35-92e5-41e480ea5737 10013 127.0.0.1 10012 
+May 26 23:04:17.408 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 3 0 udp-3bd7c521-0c8f-4f35-92e5-41e480ea5737 
+May 26 23:04:17.409 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:04:17.453 HYPERVISOR: exec_cmd: nio create_udp udp-a4a1f0cf-4eeb-413d-8e8a-2ded66d119d0 10015 127.0.0.1 10014 
+May 26 23:04:17.454 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 3 3 udp-a4a1f0cf-4eeb-413d-8e8a-2ded66d119d0 
+May 26 23:04:17.455 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:04:17.499 HYPERVISOR: exec_cmd: nio create_udp udp-74551b88-8969-4666-b1af-1e6b32242c32 10017 127.0.0.1 10016 
+May 26 23:04:17.500 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 3 1 udp-74551b88-8969-4666-b1af-1e6b32242c32 
+May 26 23:04:17.501 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:07:15.595 HYPERVISOR: exec_cmd: vm get_status R9 
+May 26 23:07:15.599 HYPERVISOR: exec_cmd: vm extract_config R9 
+May 26 23:07:15.610 HYPERVISOR: exec_cmd: vm delete R9 
+May 26 23:07:15.610 VM: VM R9 destroyed.
+May 26 23:07:15.616 HYPERVISOR: exec_cmd: hypervisor stop 
+May 26 23:07:15.761 HYPERVISOR: Stopped.
+May 26 23:07:15.761 GENERAL: reset done.

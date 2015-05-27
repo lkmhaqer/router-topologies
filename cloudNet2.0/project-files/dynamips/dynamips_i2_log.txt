@@ -1,0 +1,51 @@
+May 26 23:04:12.270 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 26 23:04:12.270 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50281.
+May 26 23:04:12.661 HYPERVISOR: exec_cmd: hypervisor version 
+May 26 23:04:12.662 HYPERVISOR: exec_cmd: hypervisor uuid 
+May 26 23:04:12.663 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips 
+May 26 23:04:12.663 GENERAL: working_dir=C:/Users/Elephant/Documents/router-topologies/cloudNet2.0\project-files\dynamips
+May 26 23:04:12.665 HYPERVISOR: exec_cmd: vm create R6 6 c7200 
+May 26 23:04:12.666 VM: VM R6 created.
+May 26 23:04:12.667 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 2106 
+May 26 23:04:12.669 HYPERVISOR: exec_cmd: vm set_aux_tcp_port R6 2506 
+May 26 23:04:12.670 HYPERVISOR: exec_cmd: c7200 get_mac_addr R6 
+May 26 23:04:12.671 HYPERVISOR: exec_cmd: vm get_status R6 
+May 26 23:04:12.672 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 0 C7200-IO-FE 
+May 26 23:04:12.673 HYPERVISOR: exec_cmd: c7200 set_mac_addr R6 ca06.415b.0000 
+May 26 23:04:12.676 HYPERVISOR: exec_cmd: vm set_ram R6 512 
+May 26 23:04:12.678 HYPERVISOR: exec_cmd: vm set_ios R6 C:/Users/Elephant/Downloads/c7200p-spservicesk9-mz.124-24.T5.bin 
+May 26 23:04:12.680 HYPERVISOR: exec_cmd: vm get_status R6 
+May 26 23:04:12.682 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 PA-FE-TX 
+May 26 23:04:12.684 HYPERVISOR: exec_cmd: vm get_status R6 
+May 26 23:04:12.685 HYPERVISOR: exec_cmd: vm slot_add_binding R6 2 0 PA-FE-TX 
+May 26 23:04:12.686 HYPERVISOR: exec_cmd: vm get_status R6 
+May 26 23:04:12.687 HYPERVISOR: exec_cmd: vm slot_add_binding R6 3 0 PA-4T+ 
+May 26 23:04:12.688 HYPERVISOR: exec_cmd: vm get_status R6 
+May 26 23:04:12.689 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x606e0538 
+May 26 23:04:12.691 HYPERVISOR: exec_cmd: vm set_config R6 configs/i6_startup-config.cfg 
+May 26 23:04:12.693 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+May 26 23:04:12.694 VM: VM Ghost created.
+May 26 23:04:12.696 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Elephant/Downloads/c7200p-spservicesk9-mz.124-24.T5.bin 
+May 26 23:04:12.696 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 26 23:04:12.697 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200p-spservicesk9-mz.124-24.T5.bin-512.ghost 
+May 26 23:04:12.697 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+May 26 23:04:12.697 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 26 23:04:12.698 HYPERVISOR: exec_cmd: vm start Ghost 
+May 26 23:04:12.935 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 26 23:04:13.150 VM: VM Ghost shutdown.
+May 26 23:04:13.150 VM: VM Ghost destroyed.
+May 26 23:04:13.157 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+May 26 23:04:13.158 HYPERVISOR: exec_cmd: vm set_ghost_file R6 c7200p-spservicesk9-mz.124-24.T5.bin-512.ghost 
+May 26 23:04:16.982 HYPERVISOR: exec_cmd: nio create_udp udp-5f94336b-4211-4cdd-a77b-994629943b39 10003 127.0.0.1 10002 
+May 26 23:04:16.983 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 3 0 udp-5f94336b-4211-4cdd-a77b-994629943b39 
+May 26 23:04:16.983 HYPERVISOR: exec_cmd: vm get_status R6 
+May 26 23:04:17.898 HYPERVISOR: exec_cmd: nio create_udp udp-417a4aa7-25fd-4ce5-bb49-fa46adb19cc7 10019 127.0.0.1 10018 
+May 26 23:04:17.910 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 3 1 udp-417a4aa7-25fd-4ce5-bb49-fa46adb19cc7 
+May 26 23:04:17.911 HYPERVISOR: exec_cmd: vm get_status R6 
+May 26 23:07:15.591 HYPERVISOR: exec_cmd: vm get_status R6 
+May 26 23:07:15.597 HYPERVISOR: exec_cmd: vm extract_config R6 
+May 26 23:07:15.605 HYPERVISOR: exec_cmd: vm delete R6 
+May 26 23:07:15.605 VM: VM R6 destroyed.
+May 26 23:07:15.614 HYPERVISOR: exec_cmd: hypervisor stop 
+May 26 23:07:15.669 HYPERVISOR: Stopped.
+May 26 23:07:15.669 GENERAL: reset done.
