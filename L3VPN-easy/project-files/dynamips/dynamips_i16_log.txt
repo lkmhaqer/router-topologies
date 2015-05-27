@@ -1,0 +1,49 @@
+May 26 23:09:21.712 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 26 23:09:21.713 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50368.
+May 26 23:09:21.799 HYPERVISOR: exec_cmd: hypervisor version 
+May 26 23:09:21.800 HYPERVISOR: exec_cmd: hypervisor uuid 
+May 26 23:09:21.800 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Elephant/Documents/router-topologies/L3VPN-easy\project-files\dynamips 
+May 26 23:09:21.809 GENERAL: working_dir=C:/Users/Elephant/Documents/router-topologies/L3VPN-easy\project-files\dynamips
+May 26 23:09:21.810 HYPERVISOR: exec_cmd: vm create AUTOIDLEPC 1 c7200 
+May 26 23:09:21.811 VM: VM AUTOIDLEPC created.
+May 26 23:09:21.812 HYPERVISOR: exec_cmd: vm set_con_tcp_port AUTOIDLEPC 2001 
+May 26 23:09:21.813 HYPERVISOR: exec_cmd: c7200 get_mac_addr AUTOIDLEPC 
+May 26 23:09:21.813 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+May 26 23:09:21.813 HYPERVISOR: exec_cmd: vm slot_add_binding AUTOIDLEPC 0 0 C7200-IO-FE 
+May 26 23:09:21.814 HYPERVISOR: exec_cmd: vm set_ram AUTOIDLEPC 512 
+May 26 23:09:21.815 HYPERVISOR: exec_cmd: vm set_ios AUTOIDLEPC C:/Users/Elephant/Downloads/c7200-spservicesk9-mz.124-22.T.bin 
+May 26 23:09:21.817 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+May 26 23:09:21.818 VM: VM Ghost created.
+May 26 23:09:21.819 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Elephant/Downloads/c7200-spservicesk9-mz.124-22.T.bin 
+May 26 23:09:21.820 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 26 23:09:21.821 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-spservicesk9-mz.124-22.T.bin-512.ghost 
+May 26 23:09:21.821 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+May 26 23:09:21.822 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 26 23:09:21.823 HYPERVISOR: exec_cmd: vm start Ghost 
+May 26 23:09:22.100 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 26 23:09:22.100 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 26 23:09:22.265 VM: VM Ghost shutdown.
+May 26 23:09:22.265 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 26 23:09:22.266 VM: VM Ghost destroyed.
+May 26 23:09:22.268 HYPERVISOR: exec_cmd: vm set_ghost_status AUTOIDLEPC 2 
+May 26 23:09:22.268 HYPERVISOR: exec_cmd: vm set_ghost_file AUTOIDLEPC c7200-spservicesk9-mz.124-22.T.bin-512.ghost 
+May 26 23:09:22.296 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+May 26 23:09:22.296 HYPERVISOR: exec_cmd: vm set_idle_pc AUTOIDLEPC 0x0 
+May 26 23:09:22.297 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+May 26 23:09:22.297 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+May 26 23:09:22.297 HYPERVISOR: exec_cmd: vm start AUTOIDLEPC 
+May 26 23:09:42.520 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+May 26 23:09:42.520 HYPERVISOR: exec_cmd: vm get_idle_pc_prop AUTOIDLEPC 0 
+May 26 23:09:52.520 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+May 26 23:09:52.520 HYPERVISOR: exec_cmd: vm set_idle_pc_online AUTOIDLEPC 0 0x61244500 
+May 26 23:09:52.521 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
+May 26 23:09:55.528 HYPERVISOR: exec_cmd: vm cpu_usage AUTOIDLEPC 0 
+May 26 23:09:55.529 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+May 26 23:09:55.529 HYPERVISOR: exec_cmd: vm stop AUTOIDLEPC 
+May 26 23:09:55.624 VM: VM AUTOIDLEPC shutdown.
+May 26 23:09:55.631 HYPERVISOR: exec_cmd: vm get_status AUTOIDLEPC 
+May 26 23:09:55.631 HYPERVISOR: exec_cmd: vm delete AUTOIDLEPC 
+May 26 23:09:55.631 VM: VM AUTOIDLEPC destroyed.
+May 26 23:09:55.632 HYPERVISOR: exec_cmd: hypervisor stop 
+May 26 23:09:55.801 HYPERVISOR: Stopped.
+May 26 23:09:55.801 GENERAL: reset done.

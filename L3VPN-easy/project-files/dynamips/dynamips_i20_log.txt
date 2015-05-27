@@ -1,0 +1,48 @@
+May 26 23:10:29.999 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 26 23:10:29.999 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50378.
+May 26 23:10:30.492 HYPERVISOR: exec_cmd: hypervisor version 
+May 26 23:10:30.492 HYPERVISOR: exec_cmd: hypervisor uuid 
+May 26 23:10:30.493 HYPERVISOR: exec_cmd: hypervisor working_dir C:/Users/Elephant/Documents/router-topologies/L3VPN-easy\project-files\dynamips 
+May 26 23:10:30.493 GENERAL: working_dir=C:/Users/Elephant/Documents/router-topologies/L3VPN-easy\project-files\dynamips
+May 26 23:10:30.493 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+May 26 23:10:30.495 VM: VM R4 created.
+May 26 23:10:30.496 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 2004 
+May 26 23:10:30.496 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+May 26 23:10:30.496 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:30.497 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+May 26 23:10:30.498 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:30.498 HYPERVISOR: exec_cmd: vm slot_add_binding R4 3 0 PA-4T+ 
+May 26 23:10:30.499 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:30.499 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-2FE-TX 
+May 26 23:10:30.500 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+May 26 23:10:30.500 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:30.501 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-2FE-TX 
+May 26 23:10:30.502 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:30.502 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+May 26 23:10:30.503 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:30.503 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-GE-E 
+May 26 23:10:30.504 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+May 26 23:10:30.505 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+May 26 23:10:30.505 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/Elephant/Downloads/c7200-spservicesk9-mz.124-22.T.bin 
+May 26 23:10:30.506 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+May 26 23:10:30.507 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:30.507 HYPERVISOR: exec_cmd: vm slot_add_binding R4 4 0 PA-4T+ 
+May 26 23:10:30.508 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:30.508 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x61244500 
+May 26 23:10:30.511 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+May 26 23:10:30.513 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+May 26 23:10:30.514 HYPERVISOR: exec_cmd: vm set_ghost_file R4 c7200-spservicesk9-mz.124-22.T.bin-512.ghost 
+May 26 23:10:48.726 HYPERVISOR: exec_cmd: nio create_udp udp-853e57ea-6160-4d5b-92f5-cf3ebce61914 10005 127.0.0.1 10004 
+May 26 23:10:48.727 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 3 1 udp-853e57ea-6160-4d5b-92f5-cf3ebce61914 
+May 26 23:10:48.728 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:10:52.293 HYPERVISOR: exec_cmd: nio create_udp udp-26201084-5058-4e3f-8b0d-041d9e681d09 10007 127.0.0.1 10006 
+May 26 23:10:52.294 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 3 0 udp-26201084-5058-4e3f-8b0d-041d9e681d09 
+May 26 23:10:52.295 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:11:49.535 HYPERVISOR: exec_cmd: vm extract_config R4 
+May 26 23:11:53.879 HYPERVISOR: exec_cmd: vm get_status R4 
+May 26 23:11:53.881 HYPERVISOR: exec_cmd: vm extract_config R4 
+May 26 23:11:53.883 HYPERVISOR: exec_cmd: vm delete R4 
+May 26 23:11:53.883 VM: VM R4 destroyed.
+May 26 23:11:53.886 HYPERVISOR: exec_cmd: hypervisor stop 
+May 26 23:11:53.997 HYPERVISOR: Stopped.
+May 26 23:11:53.997 GENERAL: reset done.
