@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="ServiceProviderLand" version="1" scripttimeout="300" author="Mitchell Gulledge">
+  <topology>
+    <nodes>
+      <node id="1" name="ISPA-R1" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="7" uuid="50084e9e-6ad5-410f-884b-98151baf1e6b" delay="0" icon="XR.png" config="0" left="275" top="313">
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="1"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="4"/>
+      </node>
+      <node id="2" name="ISPA-R2" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="7" uuid="ad146b98-30dd-4137-86bb-de9b5ae0669e" delay="0" icon="XR.png" config="0" left="135" top="313">
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="13"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="4"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="19"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="24"/>
+        <interface id="5" name="Gi0/0/0/4" type="ethernet" network_id="25"/>
+      </node>
+      <node id="3" name="ISPA-R3" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="7" uuid="c94a1548-f1b7-4f22-a826-75d46c6517a3" delay="0" icon="XR.png" config="0" left="915" top="243">
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="14"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="15"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="5"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="21"/>
+      </node>
+      <node id="4" name="ISPA-R4" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="7" uuid="11edb451-f02c-45f0-8b0d-831ab53c85af" delay="0" icon="XR.png" config="0" left="755" top="503">
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="6"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="2"/>
+      </node>
+      <node id="5" name="ISPA-R5" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="7" uuid="9d5920ee-002b-43ac-bda1-65591d712c31" delay="0" icon="XR.png" config="0" left="995" top="503">
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="6"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="17"/>
+      </node>
+      <node id="6" name="ISPA-R6" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="7" uuid="82ac6551-4fbc-4d3a-87fb-afcbad8b8d38" delay="0" icon="XR.png" config="0" left="755" top="243">
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="1"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="2"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="5"/>
+      </node>
+      <node id="7" name="ISPB-R7" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="1053" top="251">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="11"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="16"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="20"/>
+        <interface id="48" name="fa3/0" type="ethernet" network_id="22"/>
+      </node>
+      <node id="8" name="ISPB-R8" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="1053" top="361">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="11"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="8"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="9"/>
+      </node>
+      <node id="9" name="ISPB-R9" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="133" top="451">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="25"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="12"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="24"/>
+        <interface id="48" name="fa3/0" type="ethernet" network_id="7"/>
+      </node>
+      <node id="10" name="ISPB-R10" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="993" top="617">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="18"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="26"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="10"/>
+      </node>
+      <node id="11" name="ISPB-R11" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="753" top="611">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="8"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="10"/>
+      </node>
+      <node id="12" name="ISPB-R12" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="273" top="451">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="12"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="9"/>
+      </node>
+      <node id="13" name="TireShop-R13" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="1215" top="512">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="17"/>
+      </node>
+      <node id="14" name="TireShop-R14" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="95" top="82">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="13"/>
+        <interface id="48" name="fa3/0" type="ethernet" network_id="3"/>
+      </node>
+      <node id="15" name="TireShop-R15" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="855" top="72">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="15"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="23"/>
+      </node>
+      <node id="16" name="TireShop-R16" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="975" top="72">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="14"/>
+        <interface id="16" name="fa1/0" type="ethernet" network_id="16"/>
+        <interface id="32" name="fa2/0" type="ethernet" network_id="22"/>
+        <interface id="48" name="fa3/0" type="ethernet" network_id="23"/>
+      </node>
+      <node id="17" name="BankofGulledge-R17" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="6" uuid="b9999d0e-0bb8-4f74-9e24-7aa9f50a2b9d" delay="0" icon="XR.png" config="0" left="1219" top="674">
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="18"/>
+        <interface id="2" name="Gi0/0/0/1" type="ethernet" network_id="26"/>
+      </node>
+      <node id="18" name="BankofGulledge-R18" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="6" uuid="dd409773-cc69-4617-8f9a-40bd48183507" delay="0" icon="XR.png" config="0" left="29" top="144">
+        <interface id="1" name="Gi0/0/0/0" type="ethernet" network_id="7"/>
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="19"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="3"/>
+      </node>
+      <node id="19" name="BankofGulledge-R19" type="qemu" template="xrv" image="xrv-k9-6.0.0" console="telnet" cpu="1" ram="3072" ethernet="6" uuid="c2f853b6-94c7-4ef6-b2f2-705a3997cd30" delay="0" icon="XR.png" config="0" left="1129" top="64">
+        <interface id="3" name="Gi0/0/0/2" type="ethernet" network_id="20"/>
+        <interface id="4" name="Gi0/0/0/3" type="ethernet" network_id="21"/>
+      </node>
+      <node id="20" name="IslandNet" type="dynamips" template="c7200" image="c7200-adventerprisek9-mz.152-4.S6.image" idlepc="0x62f224ac" nvram="128" ram="512" delay="0" icon="Router.png" config="0" left="210" top="613">
+        <slot id="1" module="PA-FE-TX"/>
+        <slot id="2" module="PA-FE-TX"/>
+        <slot id="3" module="PA-FE-TX"/>
+        <slot id="4" module="PA-FE-TX"/>
+        <slot id="5" module="PA-FE-TX"/>
+        <slot id="6" module="PA-FE-TX"/>
+        <interface id="0" name="fa0/0" type="ethernet" network_id="25"/>
+      </node>
+    </nodes>
+    <networks>
+      <network id="1" type="bridge" name="Net-ISPA-R1-Gi0/0/0/0" left="325" top="353"/>
+      <network id="2" type="bridge" name="Net-ISPA-R6-Gi0/0/0/1" left="805" top="283"/>
+      <network id="4" type="bridge" name="Net-ISPA-R2-Gi0/0/0/1" left="185" top="353"/>
+      <network id="5" type="bridge" name="Net-ISPA-R6-Gi0/0/0/2" left="805" top="283"/>
+      <network id="6" type="bridge" name="Net-ISPA-R4-Gi0/0/0/0" left="825" top="543"/>
+      <network id="8" type="bridge" name="Net-ISPB-R11-fa1/0" left="823" top="671"/>
+      <network id="9" type="bridge" name="Net-ISPB-R8-fa2/0" left="1103" top="291"/>
+      <network id="10" type="bridge" name="Net-ISPB-R11-fa2/0" left="823" top="651"/>
+      <network id="11" type="bridge" name="Net-ISPB-R8-fa0/0" left="1103" top="381"/>
+      <network id="12" type="bridge" name="Net-ISPB-R12-fa1/0" left="323" top="491"/>
+      <network id="13" type="bridge" name="Net-TireShop-R14-fa0/0" left="75" top="252"/>
+      <network id="14" type="bridge" name="Net-TireShop-R16-fa0/0" left="785" top="112"/>
+      <network id="15" type="bridge" name="Net-TireShop-R15-fa0/0" left="905" top="112"/>
+      <network id="16" type="bridge" name="Net-TireShop-R16-fa1/0" left="1005" top="112"/>
+      <network id="17" type="bridge" name="Net-TireShop-R13-fa0/0" left="1275" top="622"/>
+      <network id="18" type="bridge" name="Net-BankofGulledge-R17-Gi0/0/0/0" left="1269" top="714"/>
+      <network id="19" type="bridge" name="Net-BankofGulledge-R18-Gi0/0/0/2" left="239" top="704"/>
+      <network id="20" type="bridge" name="Net-BankofGulledge-R19-Gi0/0/0/2" left="1159" top="114"/>
+      <network id="21" type="bridge" name="Net-BankofGulledge-R19-Gi0/0/0/3" left="1159" top="114"/>
+      <network id="22" type="bridge" name="Net-TireShop-R16-fa2/0" left="1025" top="112"/>
+      <network id="23" type="bridge" name="Net-TireShop-R15-fa1/0" left="905" top="112"/>
+      <network id="24" type="bridge" name="Net-ISPB-R9-fa2/0" left="183" top="491"/>
+      <network id="25" type="bridge" name="Net-IslandNet-fa0/0" left="200" top="393"/>
+      <network id="3" type="bridge" name="Net-TireShop-R14-fa3/0" left="185" top="182"/>
+      <network id="7" type="bridge" name="Net-ISPB-R9-fa3/0" left="183" top="491"/>
+      <network id="26" type="bridge" name="Net-BankofGulledge-R17-Gi0/0/0/1" left="1269" top="714"/>
+    </networks>
+  </topology>
+  <objects>
+    <textobjects>
+      <textobject id="1" name="SFO" type="square">
+        <data>PGRpdiBpZD0iY3VzdG9tU2hhcGUxIiBjbGFzcz0iY3VzdG9tU2hhcGUgY29udGV4dC1tZW51IHVpLWRyYWdnYWJsZSB1aS1kcmFnZ2FibGUtaGFuZGxlIHVpLXJlc2l6YWJsZSB1aS1kcmFnZ2FibGUtZHJhZ2dpbmciIGRhdGEtcGF0aD0iMSIgc3R5bGU9ImRpc3BsYXk6IGlubGluZTsgei1pbmRleDogOTk5OyBwb3NpdGlvbjogYWJzb2x1dGU7IGxlZnQ6IDExNXB4OyB0b3A6IDI4NHB4OyB3aWR0aDogMjM1cHg7IHJpZ2h0OiBhdXRvOyBoZWlnaHQ6IDI1MnB4OyBib3R0b206IGF1dG87IiB3aWR0aD0iMTIwcHgiIGhlaWdodD0iMTIwcHgiIG5hbWU9IlNGTyI+PHN2ZyB3aWR0aD0iMjM1IiBoZWlnaHQ9IjI1MiI+PHJlY3Qgd2lkdGg9IjIzNSIgaGVpZ2h0PSIyNTIiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlPSIjMDAwMDAwIiAiPSIiPjwvcmVjdD5Tb3JyeSwgeW91ciBicm93c2VyIGRvZXMgbm90IHN1cHBvcnQgaW5saW5lIFNWRy48L3N2Zz48ZGl2IGNsYXNzPSJ1aS1yZXNpemFibGUtaGFuZGxlIHVpLXJlc2l6YWJsZS1lIiBzdHlsZT0iei1pbmRleDogOTA7IGRpc3BsYXk6IGJsb2NrOyI+PC9kaXY+PGRpdiBjbGFzcz0idWktcmVzaXphYmxlLWhhbmRsZSB1aS1yZXNpemFibGUtcyIgc3R5bGU9InotaW5kZXg6IDkwOyBkaXNwbGF5OiBibG9jazsiPjwvZGl2PjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLXNlIHVpLWljb24gdWktaWNvbi1ncmlwc21hbGwtZGlhZ29uYWwtc2UiIHN0eWxlPSJ6LWluZGV4OiA5MDsgZGlzcGxheTogYmxvY2s7Ij48L2Rpdj48L2Rpdj4=</data>
+      </textobject>
+      <textobject id="2" name="AUS" type="square">
+        <data>PGRpdiBpZD0iY3VzdG9tU2hhcGUyIiBjbGFzcz0iY3VzdG9tU2hhcGUgY29udGV4dC1tZW51IHVpLWRyYWdnYWJsZSB1aS1kcmFnZ2FibGUtaGFuZGxlIHVpLXJlc2l6YWJsZSIgZGF0YS1wYXRoPSIyIiBzdHlsZT0iZGlzcGxheTogaW5saW5lOyB6LWluZGV4OiA5OTk7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgbGVmdDogNzI4cHg7IHRvcDogNDg0cHg7IGhlaWdodDogMjAwcHg7IHdpZHRoOiAzOTFweDsiIHdpZHRoPSIxMjBweCIgaGVpZ2h0PSIxMjBweCIgbmFtZT0iQVVTIj48c3ZnIHdpZHRoPSIzOTEiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMzkxIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2U9IiMwMDAwMDAiICI9IiI+PC9yZWN0PlNvcnJ5LCB5b3VyIGJyb3dzZXIgZG9lcyBub3Qgc3VwcG9ydCBpbmxpbmUgU1ZHLjwvc3ZnPjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLWUiIHN0eWxlPSJ6LWluZGV4OiA5MDsgZGlzcGxheTogYmxvY2s7Ij48L2Rpdj48ZGl2IGNsYXNzPSJ1aS1yZXNpemFibGUtaGFuZGxlIHVpLXJlc2l6YWJsZS1zIiBzdHlsZT0iei1pbmRleDogOTA7IGRpc3BsYXk6IGJsb2NrOyI+PC9kaXY+PGRpdiBjbGFzcz0idWktcmVzaXphYmxlLWhhbmRsZSB1aS1yZXNpemFibGUtc2UgdWktaWNvbiB1aS1pY29uLWdyaXBzbWFsbC1kaWFnb25hbC1zZSIgc3R5bGU9InotaW5kZXg6IDkwOyBkaXNwbGF5OiBibG9jazsiPjwvZGl2PjwvZGl2Pg==</data>
+      </textobject>
+      <textobject id="3" name="txt 3" type="text">
+        <data>PGRpdiBpZD0iY3VzdG9tVGV4dDMiIGNsYXNzPSJjdXN0b21TaGFwZSBjdXN0b21UZXh0IGNvbnRleHQtbWVudSB1aS1kcmFnZ2FibGUgdWktZHJhZ2dhYmxlLWhhbmRsZSB1aS1yZXNpemFibGUgdWktZHJhZ2dhYmxlLWRyYWdnaW5nIiBkYXRhLXBhdGg9IjMiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgbGVmdDogMTkycHg7IHRvcDogMjQ5cHg7IGN1cnNvcjogbW92ZTsgei1pbmRleDogMTAwMTsgd2lkdGg6IDgzcHg7IGhlaWdodDogNDhweDsgcmlnaHQ6IGF1dG87IGJvdHRvbTogYXV0bzsiPjxwIHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjogdG9wOyBjb2xvcjogcmdiKDAsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGZvbnQtc2l6ZTogMjRweDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsiIGFsaWduPSJjZW50ZXIiPlNGTzwvcD48ZGl2IGNsYXNzPSJ1aS1yZXNpemFibGUtaGFuZGxlIHVpLXJlc2l6YWJsZS1lIiBzdHlsZT0iei1pbmRleDogOTA7IGRpc3BsYXk6IGJsb2NrOyI+PC9kaXY+PGRpdiBjbGFzcz0idWktcmVzaXphYmxlLWhhbmRsZSB1aS1yZXNpemFibGUtcyIgc3R5bGU9InotaW5kZXg6IDkwOyBkaXNwbGF5OiBibG9jazsiPjwvZGl2PjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLXNlIHVpLWljb24gdWktaWNvbi1ncmlwc21hbGwtZGlhZ29uYWwtc2UiIHN0eWxlPSJ6LWluZGV4OiA5MDsgZGlzcGxheTogYmxvY2s7Ij48L2Rpdj48L2Rpdj4=</data>
+      </textobject>
+      <textobject id="4" name="txt 4" type="text">
+        <data>PGRpdiBpZD0iY3VzdG9tVGV4dDQiIGNsYXNzPSJjdXN0b21TaGFwZSBjdXN0b21UZXh0IGNvbnRleHQtbWVudSB1aS1kcmFnZ2FibGUgdWktZHJhZ2dhYmxlLWhhbmRsZSB1aS1yZXNpemFibGUgdWktZHJhZ2dhYmxlLWRyYWdnaW5nIiBkYXRhLXBhdGg9IjQiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgbGVmdDogODI4cHg7IHRvcDogNDQ0cHg7IGN1cnNvcjogbW92ZTsgei1pbmRleDogMTAwMTsgd2lkdGg6IDc1cHg7IGhlaWdodDogNTBweDsgcmlnaHQ6IGF1dG87IGJvdHRvbTogYXV0bzsiPjxwIHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjogdG9wOyBjb2xvcjogcmdiKDAsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGZvbnQtc2l6ZTogMjVweDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsiIGFsaWduPSJjZW50ZXIiPkFVUzwvcD48ZGl2IGNsYXNzPSJ1aS1yZXNpemFibGUtaGFuZGxlIHVpLXJlc2l6YWJsZS1lIiBzdHlsZT0iei1pbmRleDogOTA7IGRpc3BsYXk6IGJsb2NrOyI+PC9kaXY+PGRpdiBjbGFzcz0idWktcmVzaXphYmxlLWhhbmRsZSB1aS1yZXNpemFibGUtcyIgc3R5bGU9InotaW5kZXg6IDkwOyBkaXNwbGF5OiBibG9jazsiPjwvZGl2PjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLXNlIHVpLWljb24gdWktaWNvbi1ncmlwc21hbGwtZGlhZ29uYWwtc2UiIHN0eWxlPSJ6LWluZGV4OiA5MDsgZGlzcGxheTogYmxvY2s7Ij48L2Rpdj48L2Rpdj4=</data>
+      </textobject>
+      <textobject id="5" name="DAL" type="square">
+        <data>PGRpdiBpZD0iY3VzdG9tU2hhcGU1IiBjbGFzcz0iY3VzdG9tU2hhcGUgY29udGV4dC1tZW51IHVpLWRyYWdnYWJsZSB1aS1kcmFnZ2FibGUtaGFuZGxlIHVpLXJlc2l6YWJsZSIgZGF0YS1wYXRoPSI1IiBzdHlsZT0iZGlzcGxheTogaW5saW5lOyB6LWluZGV4OiA5OTk7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgbGVmdDogNzI3cHg7IHRvcDogMjE5cHg7IGhlaWdodDogMjEwcHg7IHdpZHRoOiA0MjBweDsiIHdpZHRoPSIxMjBweCIgaGVpZ2h0PSIxMjBweCIgbmFtZT0iREFMIj48c3ZnIHdpZHRoPSI0MjAiIGhlaWdodD0iMjEwIj48cmVjdCB3aWR0aD0iNDIwIiBoZWlnaHQ9IjIxMCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2U9IiMwMDAwMDAiICI9IiI+PC9yZWN0PlNvcnJ5LCB5b3VyIGJyb3dzZXIgZG9lcyBub3Qgc3VwcG9ydCBpbmxpbmUgU1ZHLjwvc3ZnPjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLWUiIHN0eWxlPSJ6LWluZGV4OiA5MDsgZGlzcGxheTogYmxvY2s7Ij48L2Rpdj48ZGl2IGNsYXNzPSJ1aS1yZXNpemFibGUtaGFuZGxlIHVpLXJlc2l6YWJsZS1zIiBzdHlsZT0iei1pbmRleDogOTA7IGRpc3BsYXk6IGJsb2NrOyI+PC9kaXY+PGRpdiBjbGFzcz0idWktcmVzaXphYmxlLWhhbmRsZSB1aS1yZXNpemFibGUtc2UgdWktaWNvbiB1aS1pY29uLWdyaXBzbWFsbC1kaWFnb25hbC1zZSIgc3R5bGU9InotaW5kZXg6IDkwOyBkaXNwbGF5OiBibG9jazsiPjwvZGl2PjwvZGl2Pg==</data>
+      </textobject>
+      <textobject id="6" name="txt 6" type="text">
+        <data>PGRpdiBpZD0iY3VzdG9tVGV4dDYiIGNsYXNzPSJjdXN0b21TaGFwZSBjdXN0b21UZXh0IGNvbnRleHQtbWVudSB1aS1kcmFnZ2FibGUgdWktZHJhZ2dhYmxlLWhhbmRsZSB1aS1yZXNpemFibGUgdWktZHJhZ2dhYmxlLWRyYWdnaW5nIiBkYXRhLXBhdGg9IjYiIHN0eWxlPSJkaXNwbGF5OiBpbmxpbmU7IHBvc2l0aW9uOiBhYnNvbHV0ZTsgbGVmdDogODE1cHg7IHRvcDogMTgycHg7IGN1cnNvcjogbW92ZTsgei1pbmRleDogMTAwMTsgd2lkdGg6IDkwcHg7IGhlaWdodDogNDZweDsgcmlnaHQ6IGF1dG87IGJvdHRvbTogYXV0bzsiPjxwIHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjogdG9wOyBjb2xvcjogcmdiKDAsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGZvbnQtc2l6ZTogMjNweDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsiIGFsaWduPSJjZW50ZXIiPkRBTDwvcD48ZGl2IGNsYXNzPSJ1aS1yZXNpemFibGUtaGFuZGxlIHVpLXJlc2l6YWJsZS1lIiBzdHlsZT0iei1pbmRleDogOTA7IGRpc3BsYXk6IGJsb2NrOyI+PC9kaXY+PGRpdiBjbGFzcz0idWktcmVzaXphYmxlLWhhbmRsZSB1aS1yZXNpemFibGUtcyIgc3R5bGU9InotaW5kZXg6IDkwOyBkaXNwbGF5OiBibG9jazsiPjwvZGl2PjxkaXYgY2xhc3M9InVpLXJlc2l6YWJsZS1oYW5kbGUgdWktcmVzaXphYmxlLXNlIHVpLWljb24gdWktaWNvbi1ncmlwc21hbGwtZGlhZ29uYWwtc2UiIHN0eWxlPSJ6LWluZGV4OiA5MDsgZGlzcGxheTogYmxvY2s7Ij48L2Rpdj48L2Rpdj4=</data>
+      </textobject>
+    </textobjects>
+  </objects>
+</lab>
